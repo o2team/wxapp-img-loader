@@ -1,0 +1,16 @@
+.img_wrap {
+	margin-bottom: 10px;
+	width: 750rpx;
+	height: 468rpx;
+	background: #ececec;
+}
+
+image {
+	width: 100%;
+	height: 100%;
+}
+
+.msg {
+	margin: 10px 0;
+	text-align: center;
+}

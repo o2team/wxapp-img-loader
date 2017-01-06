@@ -1,0 +1,11 @@
+<view class="img_wrap">
+	<image wx:if="{{ imgUrl }}" src="{{ imgUrl }}" />
+</view>
+
+<button bindtap="loadImage">Click To Load Image</button>
+
+<view class="msg">{{ msg }}</view>
+
+<!-- 引入图片预加载组件 -->
+<import src="../../img-loader/img-loader.wxml"/>
+<template is="img-loader" data="{{ imgLoadList }}"></template>

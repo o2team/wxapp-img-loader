@@ -1,0 +1,25 @@
+{
+	"pages": [
+		"demo/single-load/single-load",
+		"demo/multi-load/multi-load"
+	],
+	"window": {
+		"navigationBarTitleText": "图片预加载测试页面"
+	},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#333",
+		"backgroundColor": "#ececec",
+		"list": [{
+			"pagePath": "demo/single-load/single-load",
+			"text": "单张",
+			"iconPath": "assets/icon-square.png",
+			"selectedIconPath": "assets/icon-square.png"
+		}, {
+			"pagePath": "demo/multi-load/multi-load",
+			"text": "多张",
+			"iconPath": "assets/icon-grid.png",
+			"selectedIconPath": "assets/icon-grid.png"
+		}]
+	}
+}
