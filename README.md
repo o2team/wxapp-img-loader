@@ -36,5 +36,6 @@ this.imgLoader.load(imgUrlOriginal, (err, data) => {
 使用方法可参考 demo 目录的事例，包括加载单张图片、及加载多张图片的场景，运行效果如下图所示：
 
 ![单张图片预加载](http://storage.360buyimg.com/mtd/home/single-img-load1483686270312.gif)
-
 ![多张图片预加载](http://storage.360buyimg.com/mtd/home/multi-img-load1483686388552.gif)
+
+- eof -
