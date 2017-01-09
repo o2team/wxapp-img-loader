@@ -1,5 +1,5 @@
 <view class="img_wrap">
-	<image wx:if="{{ imgUrl }}" src="{{ imgUrl }}" />
+    <image wx:if="{{ imgUrl }}" src="{{ imgUrl }}" />
 </view>
 
 <button bindtap="loadImage">Click To Load Image</button>

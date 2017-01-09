@@ -1,7 +1,7 @@
 <view class="img_list">
-	<view wx:for="{{ imgList }}" class="img_wrap">
-		<image wx:if="{{ item.loaded }}" src="{{ item.url }}" class="fade_in" />
-	</view>
+    <view wx:for="{{ imgList }}" class="img_wrap">
+        <image wx:if="{{ item.loaded }}" src="{{ item.url }}" class="fade_in" />
+    </view>
 </view>
 
 <button bindtap="loadImages">Click To Load Images</button>
