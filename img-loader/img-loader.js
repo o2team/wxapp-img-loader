@@ -14,7 +14,9 @@ class ImgLoader {
         this.callbacks = {}
         this.imgInfo = {}
 
-        this.page.data.imgLoadList = [] //下载队列
+        this.page.setData({
+          imgLoadList: []
+        });
         this.page._imgOnLoad = this._imgOnLoad.bind(this)
         this.page._imgOnLoadError = this._imgOnLoadError.bind(this)
     }
@@ -41,7 +43,7 @@ class ImgLoader {
                 width: imgInfo.width,
                 height: imgInfo.height
             })
-        
+
         //新的未在下载队列中的
         } else if (list.indexOf(src) == -1) {
             list.push(src)
