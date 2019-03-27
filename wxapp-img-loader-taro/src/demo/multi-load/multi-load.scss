@@ -1,0 +1,24 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.img_list {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.img_wrap {
+    display: inline-block;
+    width: 185px;
+    height: 185px;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+}
+
+.fade_in {
+    animation: fadeIn 1s both;
+}
