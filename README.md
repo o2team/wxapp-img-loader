@@ -40,7 +40,7 @@ this.imgLoader.load(imgUrlOriginal, (err, data) => {
 
 ## wxapp-img-loader-taro
 
-使用于 Taro 的 wxapp-img-loader 版本， 在 wxapp-img-loader-taro 目录里
+适用于 Taro 的 wxapp-img-loader 版本， 在项目的 wxapp-img-loader-taro 目录里
 
 1、将 wxapp-img-loader-taro 目录拷贝到你的项目中
 
