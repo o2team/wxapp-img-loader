@@ -88,8 +88,8 @@ export default class multiLoad extends Component {
               key={index}
               src={item}
               data-src={item}
-              onLoad={this.imgLoader._imgOnLoad}
-              onError={this.imgLoader._imgOnLoadError}
+              onLoad={this.imgLoader._imgOnLoad.bind(this.imgLoader)}
+              onError={this.imgLoader._imgOnLoadError.bind(this.imgLoader)}
               style='width:0;height:0;opacity:0'
             />
           )

@@ -49,9 +49,9 @@ class ImgLoader {
   }
 
   _imgOnLoad(ev) {
-    let src = ev.currentTarget.dataset.src,
-      width = ev.detail.width,
-      height = ev.detail.height
+    let src = process.env.TARO_ENV === 'h5' ? ev.currentTarget.src : ev.currentTarget.dataset.src
+    let  width = ev.detail && ev.detail.width
+    let  height = ev.detail && ev.detail.height
 
     //记录已下载图片的尺寸信息
     this.imgInfo[src] = { width, height }
