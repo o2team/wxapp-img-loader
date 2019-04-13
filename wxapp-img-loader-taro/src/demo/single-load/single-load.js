@@ -40,7 +40,11 @@ export default class SingleLoad extends Component {
     //同时对原图进行预加载，加载成功后再替换
     this.imgLoader.load(imgUrlOriginal, (err, data) => {
       console.log('图片加载完成', err, data.src)
-      this.setState({ msg: '大图加载完成~' })
+      if (!err) {
+        this.setState({ msg: '大图加载完成~' })
+      } else {
+        this.setState({ msg: '大图加载失败~' })
+      }
 
       if (!err) this.setState({ imgUrl: data.src })
     })

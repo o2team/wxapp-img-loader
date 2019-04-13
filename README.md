@@ -40,6 +40,8 @@ this.imgLoader.load(imgUrlOriginal, (err, data) => {
 
 ## wxapp-img-loader-taro
 
+支持微信、H5、支付宝小程序、百度智能小程序、字节跳动小程序
+
 适用于 Taro 的 wxapp-img-loader 版本， 在项目的 wxapp-img-loader-taro 目录里
 
 1、将 wxapp-img-loader-taro 目录拷贝到你的项目中
