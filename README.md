@@ -1,6 +1,6 @@
 # wxapp-img-loader
 
-适用于微信小程序的图片预加载组件，已应用于京东购物小程序版。使用步骤如下：
+这是一个适用于微信小程序的原生图片预加载组件（**若你使用的是 [Taro](https://taro.aotu.io/)，请稳步至 [taro 分支](https://github.com/o2team/wxapp-img-loader/tree/taro)**），已应用于京东购物等多个小程序中。使用步骤如下：
 
 1、将 img-loader 目录拷贝到你的项目中
 
@@ -38,4 +38,4 @@ this.imgLoader.load(imgUrlOriginal, (err, data) => {
 ![单张图片预加载](http://storage.360buyimg.com/mtd/home/single-img-load1483686270312.gif)
 ![多张图片预加载](http://storage.360buyimg.com/mtd/home/multi-img-load1483686388552.gif)
 
-- eof -
+\- eof -
