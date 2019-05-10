@@ -1,20 +1,33 @@
-# wxapp-img-loader
+# wxapp-img-loader-taro
 
-适用于微信小程序的图片预加载组件，已应用于京东购物小程序版。使用步骤如下：
+[wxapp-img-loader](https://github.com/o2team/wxapp-img-loader) 的 Taro 版本
 
-1、将 img-loader 目录拷贝到你的项目中
+支持微信、H5、支付宝小程序、百度智能小程序、字节跳动小程序
 
-2、在页面的 WXML 文件中添加以下代码，将组件模板引入
+1、将 wxapp-img-loader-taro 目录拷贝到你的项目中
 
-```html
-<import src="../../img-loader/img-loader.wxml"/>
-<template is="img-loader" data="{{ imgLoadList }}"></template>
+2、在页面的 js 的 rander 方法中添加以下代码
+
+``` jsx
+<Block>
+    {imgLoadList.map((item, index) => {
+        return (
+        <Image
+            key={index}
+            src={item}
+            data-src={item}
+            onLoad={this.imgLoader._imgOnLoad}
+            onError={this.imgLoader._imgOnLoadError}
+            style='width:0;height:0;opacity:0'
+        />
+        )
+    })}
+</Block>
 ```
-
-3、在页面的 JS 文件中引入组件脚本
+3、在页面的 JS 文件中引入脚本
 
 ```js
-const ImgLoader = require('../../img-loader/img-loader.js')
+import ImgLoader from '../../img-loader/img-loader'
 ```
 
 4、实例化一个 ImgLoader 对象，将 this(当前 Page 对象) 传入，第二个参数可选，为默认的图片加载完成的回调方法
@@ -37,5 +50,3 @@ this.imgLoader.load(imgUrlOriginal, (err, data) => {
 
 ![单张图片预加载](http://storage.360buyimg.com/mtd/home/single-img-load1483686270312.gif)
 ![多张图片预加载](http://storage.360buyimg.com/mtd/home/multi-img-load1483686388552.gif)
-
-- eof -
