@@ -29,6 +29,7 @@
 ```js
 import ImgLoader from '../../img-loader/img-loader'
 ```
+
 4、实例化一个 ImgLoader 对象，将 this(当前 Page 对象) 传入，第二个参数可选，为默认的图片加载完成的回调方法
 
 ```js
