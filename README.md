@@ -6,7 +6,7 @@
 
 1、将 wxapp-img-loader-taro 目录拷贝到你的项目中
 
-2、在页面的 js 的 rander 方法中添加以下代码
+2、在页面的 js 的 render 方法中添加以下代码
 
 ``` jsx
 <Block>
